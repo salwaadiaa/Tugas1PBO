@@ -9,10 +9,10 @@ $hitung = new perhitungan();
  
 
 //memanggil method luas dari luas persegi
-echo $hitung->luas_persegi(4);
+// echo $hitung->luas_persegi(4);
  
-//memanggil method warna_kulit dari luas segitiga
-echo $hitung->luas_segitiga(12, 5);
+// //memanggil method warna_kulit dari luas segitiga
+// echo $hitung->luas_segitiga(12, 5);
 
 //memanggil method warna_kulit dari luas persegi panjang
 echo $hitung->luas_persegipanjang(6, 9);
