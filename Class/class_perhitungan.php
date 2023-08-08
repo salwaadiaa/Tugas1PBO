@@ -10,39 +10,26 @@
 class perhitungan{
 
     //property
-    var $sisi;
-    var $panjang;
-    var $lebar;
-    var $alas;
-    var $tinggi;
-    var $hasil;
-    
-    // Method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjakan 
-    // oleh suatu object. Method didefinisikan pada class akan tetapi dipanggil melalui object.
-    //method
-    function luas_persegi($sisi){
-        $hasil=$sisi * $sisi;;
-        return "Hasil Luas Persegi : ".$hasil."<br>";
-    }
-    
-    
-    // function keliling_persegi($sisi){
-    //     $hasil=$sisi+$sisi+$sisi+$sisi;
-    //     return "Hasil Keliling Persegi : ".$hasil."<br>";
-    // }
-    function luas_segitiga ($alas, $tinggi){
-        $hasil=1/2 * $alas * $tinggi;
-        return "Hasil Luas Segitiga : ".$hasil."<br>";
-    }
-    
-    // function keliling_segitiga($sisi1, $sisi2, $sisi3){
-    //     $hasil=$sisi1+$sisi2+$sisi3;
-    //     return "Hasil Keliling Segitiga : ".$hasil."<br>";
-    // }
+   var $bil1, $bil2, $bil3;
 
-    function luas_persegipanjang ($panjang, $lebar){
-        $hasil= $panjang * $lebar;
-        return "Hasil Luas Persegi Panjang : ".$hasil."<br>";
+    function luas_persegi($bil1){
+        $sisi=$bil1;
+        $luas=$sisi*$sisi;
+        return "sisi =" .$sisi. "<br> Luas =" .$sisi." x ".$sisi." <br> Hasil = ".$luas;
+    }
+
+    function luas_persegipanjang($bil1,$bil2){
+        $panjang=$bil1;
+        $lebar=$bil2;
+        $luas=$panjang*$lebar;
+        return "Panjang =" .$panjang."<br> Lebar =" .$lebar."<br> Luas =".$panjang." x ".$lebar." <br> Hasil =".$luas;
+    }
+
+    function luas_segitiga($bil1,$bil2){
+        $alas=$bil1;
+        $tinggi=$bil2;
+        $luas=$alas*$tinggi/2;
+        return "Alas =" .$alas."<br> Tinggi =" .$tinggi."<br> Luas =".$alas." x ".$tinggi.":2 <br> Hasil =".$luas;    
     }
     
 }
